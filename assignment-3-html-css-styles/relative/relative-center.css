@@ -1,0 +1,58 @@
+.Absolute-Center {		/*	THIS IS USED ONLY TO MAKE THE */
+  margin: auto;			/*	OVERALL "FLOW" LOOK CENTERED ON THE PAGE*/
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.parent {
+	height: 600px;
+	width: 600px;
+	border: 5px;
+}
+.child1 {
+	position: relative;
+	height: 50%;
+	width: 50%;
+}
+.world {
+	position: relative;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	left: 50%;
+}
+.me {
+	position: relative;
+	border-radius: 50%;
+	height: 50%;
+	width: 50%;
+	top: -75%;
+	left: 75%;
+}
+
+/*  /*The true difference between 'absolute' and 'relative' 
+	/*positioning is that location is not just based on  
+  	/*height and width designations.  Both are based on the 
+  	/*'container' that holds them.  'Absolute' placement is 
+  	/*based on the container size in DESCRETE units and 
+  	/*direct placement within it.  'Relative' placement is 
+  	/*based on placement of other elements in the layout 
+  	/*and the spacing relationships between all elements.
+
+  	/*In this case 'relative' positioning of "me" is based on
+  	/*backing the "me" element 'up' so that it over-
+  	/*laps the "world" element.  This was done using the
+  	/*'top' property and a negative 'value'.
+
+		.me {
+			position: relative;
+			border-radius: 50%;
+			height: 50%;
+			width: 50%;
+			top: -75%;
+			left: 75%;
+		}
+
+  	/*In effect putting "me" in my place in the "world" 
+  	/*instead of having the world center around me.*/
+
+  	
